@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{readUint64LE}from'../src/index.js';it('reads 64 bits',()=>expect(readUint64LE(Uint8Array.from([1,0,0,0,1,0,0,0]))).toBe(4294967297n));
